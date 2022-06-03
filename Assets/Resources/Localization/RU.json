@@ -1,0 +1,12 @@
+{
+   "pairs":[
+      {
+         "Key":"Ui.Button.Play",
+         "Value":"Играть"
+      },
+      {
+         "Key":"Ui.Panel.Score",
+         "Value":"Счет"
+      }
+   ]
+}
