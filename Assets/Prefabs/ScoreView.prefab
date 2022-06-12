@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3474443789716935566}
   - component: {fileID: 5614414611889790865}
   - component: {fileID: 1260009737696858382}
+  - component: {fileID: 2007085068785164577}
   m_Layer: 5
   m_Name: ScoreView
   m_TagString: Untagged
@@ -91,6 +92,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreTextValue: {fileID: 8871038259542989686}
   scoreText: {fileID: 6649649824929336787}
+--- !u!114 &2007085068785164577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189758830515405680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1682994404, guid: 489c9e597825ca440bdc0c0d4c4c1c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6639343119927115786
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00000000000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

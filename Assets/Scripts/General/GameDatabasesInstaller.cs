@@ -13,6 +13,7 @@ namespace General
         [SerializeField] private PhysicsSettingsDatabase physicsSettingsDatabase;
         [SerializeField] private TimeSettingsDatabase timeSettingsDatabase;
         [SerializeField] private MockAdSettingsDatabase mockAdSettingsDatabase;
+        [SerializeField] private FightersColorsDatabase fightersColorsDatabase;
         [SerializeField] private BuildSettings buildSettings;
         public override void InstallBindings()
         {
@@ -22,6 +23,7 @@ namespace General
             Container.Bind<IPhysicsSettingsDatabase>().FromInstance(physicsSettingsDatabase).AsSingle();
             Container.Bind<ITimeSettingsDatabase>().FromInstance(timeSettingsDatabase).AsSingle();
             Container.Bind<IAdSettingsDatabase>().FromInstance(mockAdSettingsDatabase).AsSingle();
+            Container.Bind<IFightersColorsDatabase>().FromInstance(fightersColorsDatabase).AsSingle();
         }
     }
 }

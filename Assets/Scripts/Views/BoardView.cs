@@ -4,10 +4,12 @@ using UnityEngine.Serialization;
 
 namespace Views
 {
-    public class BoardView:AView
+    public class BoardView:LinkableView<GameEntity>
     {
         [SerializeField] private Transform spawnPosition;
-        [SerializeField] private Collider a;
+        [SerializeField] private Transform battleCanvasPosition;
+
+        public Transform BattleCanvasPosition => battleCanvasPosition;
 
         public Transform SpawnPosition => spawnPosition;
     }

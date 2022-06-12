@@ -166,6 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3592152759618067018}
   - component: {fileID: 986594422058947954}
+  - component: {fileID: 1352292654940866010}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -212,6 +213,18 @@ MonoBehaviour:
   playButtonText: {fileID: 6745825584638488276}
   ruLocalizationButton: {fileID: 8791835930504450233}
   engLocalizationButton: {fileID: 2852152946555697532}
+--- !u!114 &1352292654940866010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3142487087379131241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1682994404, guid: 489c9e597825ca440bdc0c0d4c4c1c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3920226090145304580
 GameObject:
   m_ObjectHideFlags: 0

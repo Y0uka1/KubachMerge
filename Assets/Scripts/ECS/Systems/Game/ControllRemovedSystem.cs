@@ -25,6 +25,7 @@ namespace ECS.Systems.Game
             foreach (var entity in entities)
             {
                 entity.cubeRigidBody.Value.freezeRotation = false;
+                entity.isMergeable = true;
             }
         }
     }

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using Databases;
 using Entitas;
+using General;
 using GoogleMobileAds.Api;
 using UnityEngine;
 using Zenject;
 
 namespace ECS.Systems
 {
-    public class AdInterstitialSystem:ReactiveSystem<CommandEntity>, IInitializable
+    public class AdInterstitialSystem : ReactiveSystem<CommandEntity>, IInitializable
     {
         private readonly IAdSettingsDatabase _adSettingsDatabase;
         private InterstitialAd _interstitialAd;

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Views
 {
-    public class MainMenuView:AView
+    public class MainMenuView:LinkableView<GameEntity>
     {
         [SerializeField] private Button playButton;
         [SerializeField] private Text playButtonText;

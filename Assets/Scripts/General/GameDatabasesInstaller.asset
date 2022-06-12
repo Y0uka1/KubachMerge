@@ -22,4 +22,6 @@ MonoBehaviour:
     type: 2}
   mockAdSettingsDatabase: {fileID: 11400000, guid: 29a57c17cdfe86f4cb0b8132963048e2,
     type: 2}
+  fightersColorsDatabase: {fileID: 11400000, guid: 557f1e6379e1eb94ebdbc9147951ed92,
+    type: 2}
   buildSettings: {fileID: 11400000, guid: 9f7731acd072db240b53d1bffdc25328, type: 2}

@@ -14,7 +14,7 @@ namespace Controllers
         private readonly GameContext _gameContext;
         private readonly ICubesColorsDatabase _cubesColorsDatabase;
         private readonly CommandContext _commandContext;
-        private GameEntity _timerEntity;
+        // private GameEntity _timerEntity;
         private int spawnedCubesCounter = 0;
 
         public CubeSpawnController(ICubesMeshesDatabase cubesMeshesDatabase, GameContext gameContext,
@@ -30,8 +30,9 @@ namespace Controllers
         {
             _gameContext.SetMaxTierCube(1);
             _gameContext.SetScore(0);
-            _timerEntity = _gameContext.CreateEntity();
-            _timerEntity.AddAnySpawnTimerRemovedListener(this);
+            var entity = _gameContext.CreateEntity();
+            entity.AddAnySpawnTimerRemovedListener(this);
+            View.Link(entity);
         }
 
         public void Tick()

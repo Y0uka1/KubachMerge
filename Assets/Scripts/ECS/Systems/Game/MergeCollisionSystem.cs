@@ -34,8 +34,8 @@ namespace ECS.Systems.Game
                 entity.isDestroyed = true;
                 entity.collision.Value.LinkedEntity.isDestroyed = true;
                 var command = _commandContext.CreateEntity();
-                if(!PoolContainsPair(entity,entity.collision.Value.LinkedEntity))
-                    continue;
+                // if(!PoolContainsPair(entity,entity.collision.Value.LinkedEntity))
+                //     continue;
                 command.AddMerge(new MergeInfoVo()
                 {
                     Position = entity.collision.Position,

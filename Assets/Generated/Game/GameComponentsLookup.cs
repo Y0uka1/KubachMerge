@@ -8,30 +8,36 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int AnyScoreListener = 0;
-    public const int AnySpawnTimerRemovedListener = 1;
-    public const int Destroyed = 2;
-    public const int AffectedByOtherCube = 3;
-    public const int Collision = 4;
-    public const int CubePosition = 5;
-    public const int CubeRenderer = 6;
-    public const int CubeRigidBody = 7;
-    public const int MaxTierCube = 8;
-    public const int Mergeable = 9;
-    public const int MergeAcceleration = 10;
-    public const int Score = 11;
-    public const int SpawnTimer = 12;
-    public const int StartingAcceleration = 13;
-    public const int Tier = 14;
-    public const int Timer = 15;
-    public const int TouchControllEnabled = 16;
-    public const int UnderControl = 17;
+    public const int AnyMergeableListener = 0;
+    public const int AnyMergeableRemovedListener = 1;
+    public const int AnyScoreListener = 2;
+    public const int AnySpawnTimerRemovedListener = 3;
+    public const int UId = 4;
+    public const int Destroyed = 5;
+    public const int AffectedByOtherCube = 6;
+    public const int Collision = 7;
+    public const int CubePosition = 8;
+    public const int CubeRenderer = 9;
+    public const int CubeRigidBody = 10;
+    public const int MaxTierCube = 11;
+    public const int Mergeable = 12;
+    public const int MergeAcceleration = 13;
+    public const int Score = 14;
+    public const int SpawnTimer = 15;
+    public const int StartingAcceleration = 16;
+    public const int Tier = 17;
+    public const int Timer = 18;
+    public const int TouchControllEnabled = 19;
+    public const int UnderControl = 20;
 
-    public const int TotalComponents = 18;
+    public const int TotalComponents = 21;
 
     public static readonly string[] componentNames = {
+        "AnyMergeableListener",
+        "AnyMergeableRemovedListener",
         "AnyScoreListener",
         "AnySpawnTimerRemovedListener",
+        "UId",
         "Destroyed",
         "AffectedByOtherCube",
         "Collision",
@@ -51,8 +57,11 @@ public static class GameComponentsLookup {
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(AnyMergeableListenerComponent),
+        typeof(AnyMergeableRemovedListenerComponent),
         typeof(AnyScoreListenerComponent),
         typeof(AnySpawnTimerRemovedListenerComponent),
+        typeof(ECS.Components.BattleGround.UIdComponent),
         typeof(ECS.Components.Command.DestroyedComponent),
         typeof(ECS.Components.Game.AffectedByOtherCubeComponent),
         typeof(ECS.Components.Game.CollisionComponent),

@@ -14,18 +14,21 @@ namespace Controllers
         private readonly SignalBus _signalBus;
         private readonly ILocalizationProvider _localizationProvider;
         private readonly CubeSpawnController _spawnController;
+        private readonly GameContext _gameContext;
         private readonly CompositeDisposable _disposable = new CompositeDisposable();
 
         public MainMenuController(MainMenuView view, SignalBus signalBus, ILocalizationProvider localizationProvider,
-            CubeSpawnController spawnController) : base(view)
+            CubeSpawnController spawnController, GameContext gameContext) : base(view)
         {
             _signalBus = signalBus;
             _localizationProvider = localizationProvider;
             _spawnController = spawnController;
+            _gameContext = gameContext;
         }
 
         public override void Initialize()
         {
+            View.Link(_gameContext.CreateEntity());
             View.PlayButton.OnClickAsObservable().Subscribe(s =>
                 {
                     //TODO Need Refactor

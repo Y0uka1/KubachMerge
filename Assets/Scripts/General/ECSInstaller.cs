@@ -14,6 +14,7 @@ namespace General
             Container.BindInstance(Contexts.sharedInstance).AsSingle();
             Container.BindInstance(Contexts.sharedInstance.game).AsSingle();
             Container.BindInstance(Contexts.sharedInstance.command).AsSingle();
+            Container.BindInstance(Contexts.sharedInstance.battleGround).AsSingle();
             // Container.Bind().FromInstance(Contexts.sharedInstance.input).AsSingle();
             Container.BindInterfacesAndSelfTo<Systems>().AsSingle();
             Container.BindInterfacesAndSelfTo<GameEventSystems>().AsSingle();
@@ -25,9 +26,12 @@ namespace General
             Container.BindInterfacesAndSelfTo<CubeStartingAccelerationSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<CubeAffectedByOtherCubeSystem>().AsSingle();
             Container.BindInterfacesAndSelfTo<MergeSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<AdInterstitialSystem>().AsSingle();
-            Container.BindInterfacesAndSelfTo<AdBannerSystem>().AsSingle();
             
+            if(_buildSettings.IsAdvertismentActive)
+            {
+                Container.BindInterfacesAndSelfTo<AdInterstitialSystem>().AsSingle();
+                Container.BindInterfacesAndSelfTo<AdBannerSystem>().AsSingle();
+            }
             
             
             

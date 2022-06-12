@@ -43,6 +43,7 @@ namespace ECS.Systems
                     Quaternion.identity);
                 var newEntity = _gameContext.CreateCube(entity.merge.Value.Tier, view
                     , entity.merge.Value.Position);
+                newEntity.isMergeable = true;
                 newEntity.cubeRenderer.Value.material.color = _cubesColorsDatabase.Get(newEntity.tier.Value);
                 var accelerationVector = Vector3.up * _physicsSettingsDatabase.CubeMergingAcceleration;
                 var cubesGroup = _gameContext.GetGroup(GameMatcher.Mergeable).GetEntities();

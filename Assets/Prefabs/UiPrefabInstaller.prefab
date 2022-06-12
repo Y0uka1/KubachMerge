@@ -49,3 +49,5 @@ MonoBehaviour:
     type: 3}
   mainMenuView: {fileID: 986594422058947954, guid: bfd3316e1760ece43881a8d5cfacd056,
     type: 3}
+  battleFieldView: {fileID: 834275086718036130, guid: 5aa3f956c1e8e3a459b725d85952ff70,
+    type: 3}

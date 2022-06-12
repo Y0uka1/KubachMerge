@@ -4,7 +4,7 @@ using Zenject;
 
 namespace Controllers
 {
-    public abstract class AController<TView>: IInitializable where TView:AView
+    public abstract class AController<TView>: IInitializable, IController where TView:AView
     {
         protected TView View;
 

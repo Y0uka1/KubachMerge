@@ -9,7 +9,7 @@ using Zenject;
 
 namespace Views
 {
-    public class CubeView : LinkableView
+    public class CubeView : LinkableView<GameEntity>
     {
         [SerializeField] private MeshRenderer meshRenderer;
         [SerializeField] private Rigidbody _rigidbody;
@@ -110,9 +110,13 @@ namespace Views
             entity.isAffectedByOtherCube = true;
             if (entity.tier.Value == Entity.tier.Value)
             {
+                if(Entity.hasCollision || entity.hasCollision)
+                    return;
                 var cubePosition = collision.gameObject.transform.position;
                 var view = collision.gameObject.GetComponent<CubeView>();
                 Entity.AddCollision(view, cubePosition);
+                entity.isMergeable = false;
+                Entity.isMergeable = false;
                 Destroy(gameObject);
                 Destroy(collision.gameObject);
             }

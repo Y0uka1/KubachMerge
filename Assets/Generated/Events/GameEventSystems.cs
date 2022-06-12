@@ -9,6 +9,8 @@
 public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
+        Add(new AnyMergeableEventSystem(contexts)); // priority: 0
+        Add(new AnyMergeableRemovedEventSystem(contexts)); // priority: 0
         Add(new AnyScoreEventSystem(contexts)); // priority: 0
         Add(new AnySpawnTimerRemovedEventSystem(contexts)); // priority: 0
     }

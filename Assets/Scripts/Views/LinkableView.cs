@@ -1,13 +1,13 @@
 ﻿using Entitas;
 using Entitas.Unity;
-using UnityEngine;
 
 namespace Views
 {
-    public abstract class LinkableView:AView
+    public abstract class LinkableView<TEntity> : AView where TEntity : IEntity
     {
-        protected GameEntity Entity;
-        public virtual void Link(GameEntity entity)
+        protected TEntity Entity;
+
+        public virtual void Link(TEntity entity)
         {
             gameObject.Link(entity);
             Entity = entity;

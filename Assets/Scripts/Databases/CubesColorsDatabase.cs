@@ -16,10 +16,8 @@ namespace Databases
                     continue;
                 return colour.CubeColor;
             }
-#if UNITY_EDITOR
-            throw new Exception($"[CubesColorsDatabase] Color for tier {tier} not found");
-#endif
-            return colours[0].CubeColor;
+            UnityEngine.Debug.LogError($"[CubesColorsDatabase] Color for tier {tier} not found");
+            return colours[tier%colours.Length].CubeColor;
         }
     }
 

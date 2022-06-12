@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4332490d8f6a444289df803caa39a8ff, type: 3}
+  m_Name: FightersColorsDatabase
+  m_EditorClassIdentifier: 
+  colours:
+  - FighterSprite: {fileID: 21300000, guid: 6d97e685da434b44ab7d7d28b81931f5, type: 3}
+    Tier: 1
+  - FighterSprite: {fileID: 21300000, guid: 3c1ea05b9a5cf234e97ee8a90a01f94f, type: 3}
+    Tier: 2
+  - FighterSprite: {fileID: 21300000, guid: e1794d15e46bf394285bbd9dd04b1251, type: 3}
+    Tier: 3
+  - FighterSprite: {fileID: 21300000, guid: 05f4fadb0f42c5343b2cb294ea5e933d, type: 3}
+    Tier: 4
+  - FighterSprite: {fileID: 21300000, guid: ff5d780494e408c438f65eea50f07da4, type: 3}
+    Tier: 5

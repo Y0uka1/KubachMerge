@@ -1,10 +1,11 @@
-﻿using TMPro;
+﻿using Entitas;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Views
 {
-    public class ScoreView:LinkableView,IAnyScoreListener
+    public class ScoreView:LinkableView<GameEntity>,IAnyScoreListener
     {
         [SerializeField] private TMP_Text scoreTextValue;
         [SerializeField] private TMP_Text scoreText;

@@ -47,3 +47,5 @@ MonoBehaviour:
     type: 3}
   _boardView: {fileID: 6703870437476021129, guid: c8be0e623c4d077469800a1f5b36ea9b,
     type: 3}
+  battleFieldView: {fileID: 834275086718036130, guid: 5aa3f956c1e8e3a459b725d85952ff70,
+    type: 3}
